@@ -1,0 +1,5 @@
+${test_number};${test_type};${first_name};${last_name};${postal_code};${expected_display};${test_desc}
+0;N;;;;Error: First Name is required;sent input blank FirstName, LastName, Postal Code
+1;N;;Maryana;17131;Error: First Name is required;sent input blank FirstName
+2;N;Firda;;17131;Error: Last Name is required;sent input blank LastName
+3;N;Firda;Maryana;;Error: Postal Code is required;sent input blank Postal Code

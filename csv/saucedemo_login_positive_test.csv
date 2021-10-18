@@ -1,0 +1,4 @@
+${test_number};${test_type};${username};${password};${expected_display};${test_desc}
+0;P;standard_user;secret_sauce;;send valid login saucedemo using standard_user
+1;P;problem_user;secret_sauce;;send valid login saucedemo using problem_user
+2;P;performance_glitch_user;secret_sauce;;send valid login saucedemo using performance_glitch_user

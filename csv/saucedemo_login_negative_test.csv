@@ -1,0 +1,9 @@
+${test_number};${test_type};${username};${password};${expected_display};${test_desc}
+0;N;;;Epic sadface: Username is required;sent input blank username and password
+1;N;;abc123;Epic sadface: Username is required;sent input blank username
+2;N;abcd;abc123;Epic sadface: Username and password do not match any user in this service;sent input username less than 5 characters
+3;N;abcdefghijklmnopqrstuvwxyz1234567890!@#$%^&*()-_=+`~[]{}\|;abc123;Epic sadface: Username and password do not match any user in this service;sent input freetext username more than 50 characters
+4;N;abc123;;Epic sadface: Password is required;sent input blank password
+5;N;abc123;abcd;Epic sadface: Username and password do not match any user in this service;sent input password less than 5 characters
+6;N;abc123;abcdefghijklmnopqrstuvwxyz1234567890!@#$%^&*()-_=+`~[]{}\|;Epic sadface: Username and password do not match any user in this service;sent input freetext password more than 50 characters
+7;N;locked_out_user;secret_sauce;Epic sadface: Sorry, this user has been locked out.;sent locked out user

@@ -1,0 +1,8 @@
+${test_number};${test_type};${first_name};${last_name};${postal_code};${expected_display};${test_desc}
+0;P;Firda;Maryana;17131;;sent input valid data
+1;P;Fir;Maryana;17131;;sent input first name less than 4 character
+2;P;abcdefghijklmnopqrstuvwxyz1234567890!@#$%^&*()-_=+`~[]{}\|;Maryana;17131;;sent input first name more than 50 character
+3;P;Firda;Mar;17131;;sent input last name less than 4 character
+4;P;Firda;abcdefghijklmnopqrstuvwxyz1234567890!@#$%^&*()-_=+`~[]{}\|;17131;;sent input last name less than 4 character
+5;P;Firda;Maryana;171;;sent input postal code less than 4 character
+6;P;Firda;Maryana;abcdefghijklmnopqrstuvwxyz1234567890!@#$%^&*()-_=+`~[]{}\|;;sent input postal code more than 50 character
